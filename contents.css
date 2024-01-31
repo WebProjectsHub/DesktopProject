@@ -1,0 +1,11 @@
+/*---------------set html height to full page--------*/
+.container
+	{
+	width:100%;
+	height:100%;
+	margin: 0;
+	overflow:hidden;
+	background-color:black;
+	display:flex;
+	align-items:center;
+	}
