@@ -51,7 +51,7 @@ body
 /*---------------Style the font----------------------*/
 /*---------------Style the texts---------------------*/
 p	{
-	margin-top: 0;
+	margin: 0;
 	color:white;
 	}
 
@@ -78,7 +78,7 @@ h6	{ font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 	position:fixed;
 	width:100vw;
 	height:100vh;
-	-webkit-background-image:url(../assets/images/31190.jpg);
+	-webkit-background-image:url(./assets/images/31190.jpg);
 	background-image:url(./assets/images/31190.jpg);
 	background-size: cover;
 	background-position:0% 0%;
@@ -87,6 +87,18 @@ h6	{ font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 	z-index:-1;
 	}
+
+.container
+	{
+	width:100%;
+	height:100%;
+	margin: 0;
+	overflow:hidden;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	}
+
 iframe
 	{
 	width:100%;
@@ -95,14 +107,74 @@ iframe
 	border:none;
 	padding:15px;
 	align-items:center;
+	justify-content:center;
 	}
 
 .quote
 	{
-	font-family:YsabeauInfant;
-	text-align:center;
-	color:silver;
+	padding:20px;
+	margin:40px;
+	background-color:gray;
+
+	background-color: rgb(255,255,255);
+	background-color:rgba(255,255,255,0.1);
+
+	backdrop-filter: blur(5px);
+	border-radius:10px;
+	
 	}
+.text
+	{
+	font-family:YsabeauInfant;
+	font-size: 2.4rem; 
+	line-height: 1.35;
+	letter-spacing: -.08rem;
+
+	text-align:center;
+	}
+
+.text:before
+	{
+	font-family:Arial Bold;
+	content:'“';
+	}
+.text:after
+	{
+	font-family:Arial Bold;
+	content:'”';
+	}
+
+.author
+	{
+	font-family:Raleway;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	letter-spacing: 0;
+
+	text-align:right;
+	padding-top:10px;
+	}
+
+.note
+	{	
+	background-color: rgb(0,20,0);
+	background-color:rgba(0,0,0,0.1);
+	backdrop-filter: blur(5px);
+	border-radius:10px;
+	display:flex;
+	align-items:center;
+	padding-left:10px;
+	width:100%;
+	height:100%;
+	}
+
+.poemTitle, .poemAuthor, .poemContent
+	{
+	background-color: rgb(0,20,0);
+	background-color:rgba(0,0,0,0.1);
+	backdrop-filter: blur(5px);
+	}
+
 	
 /*---------------END Style GENERAL-------------------*/
 /*---------------Style header------------------------*/
@@ -122,17 +194,12 @@ iframe
 	}
 	/*---------------END Style headerLeft--------*/
 	/*---------------Style headerMid-------------*/
-.headerMid
-	{
-	display:flex;
-	width:40%;
-	}
-	/*---------------END Style headerMid---------*/
+
 	/*---------------Style headerRight-----------*/
 .headerRight
 	{
 	display:flex;
-	width:30%;
+	width:70%;
 	}
 	/*---------------END Style headerRight--------*/
 /*---------------END Style header--------------------*/
@@ -174,14 +241,14 @@ iframe
 .footerLeft
 	{
 	display:flex;
-	width:70%;
+	width:30%;
 	}
 	/*---------------END Style footerLeft--------*/
 	/*---------------Style footerRight-----------*/
 .footerRight
 	{
 	display:flex;
-	width:30%;
+	width:70%;
 	}
 	/*---------------END Style footerRight-------*/
 /*---------------END Style footer--------------------*/
