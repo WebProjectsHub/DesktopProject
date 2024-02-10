@@ -2,10 +2,9 @@
 var url = [
 	"./body/A Prayer.html",
 	"./body/Advice To A Son.html",
-	"./body/An Empty Meadow.html",
 	"./body/Be The Best Of Whatever You Are.html",
-	"./body/Because I Could Not Stop for Death.html",
-	"./body/Calypso.html",
+	"./body/bodyRight - image.html",	//------*//
+	"./body/bodyRight.html",		//------*//
 	"./body/Courage.html",
 	"./body/Deep-sea Soundings.html",
 	"./body/Desiderata.html",
@@ -18,10 +17,10 @@ var url = [
 	"./body/I Am the Only Being Whose Doom.html",
 	"./body/I Do Not Love You Except Because I Love You.html",
 	"./body/I Love You.html",
-	"./body/If.html",
 	"./body/If God Says Yes.html",
 	"./body/If I Can Stop One Heart From Breaking.html",
 	"./body/If I Could Tell You.html",
+	"./body/If.html",
 	"./body/Immortality.html",
 	"./body/Into the Fray.html",
 	"./body/Invictus.html",
@@ -42,7 +41,6 @@ var url = [
 	"./body/Sonnet VII.html",
 	"./body/Still I Rise.html",
 	"./body/Stopping by Woods on a Snowy Evening.html",
-	"./body/The Bells.html",
 	"./body/The Invitation.html",
 	"./body/The Journey.html",
 	"./body/The Night is Darkening Round Me.html",
@@ -52,9 +50,6 @@ var url = [
 	"./body/The Visitor.html",
 	"./body/Time Does Not Bring Relief; You All Have Lied.html",
 	"./body/To A Little Girl.html",
-	"./body/Untitled.html",
-	"./body/You Took Away My Innocence.html",
-	"./body/Wild nights - Wild nights.html"
 	];
 var myIframe = document.getElementById("bodyRight");
 function displayRandomFile() 

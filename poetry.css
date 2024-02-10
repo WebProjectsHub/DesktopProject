@@ -193,32 +193,19 @@ iframe
 	backdrop-filter: blur(5px);
 	border-radius:10px;
 	width: max-content;
-
-	display:flex;
-	flex-direction:column;
 	height: 100%;
 	font-family:YsabeauInfant;
-	padding:20px;
- 
-	color:white;
-
+	padding:10px;
+	overflow:auto;
 	}
 .poem hp3, hp4, hp5
 	{ margin:0	}
-.poemAuthor
-	{ margin-bottom:5px	}
 .poemAuthor hp5
 	{
 	font-style:italic;
 	}
 .poemAuthor hp5::before
 	{ content:"by " }
-
-.poemContent
-	{
-	overflow:auto;
-	padding-right:15px;
-	}
 	/*-------END poem----------------------------*/
 	/*-------image-------------------------------*/
 .image
