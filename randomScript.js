@@ -1,6 +1,3 @@
-setTimeout(function() {
-	document.getElementById('bodyRight').style.display = 'none';
-
 //--select random--------------*//
 var url = [
 	"./body/A Prayer.html",
@@ -54,6 +51,20 @@ var url = [
 	"./body/Time Does Not Bring Relief; You All Have Lied.html",
 	"./body/To A Little Girl.html",
 	];
+
+ // Function to display the iframe for 30 seconds
+  function showIframe() 
+	{
+		document.getElementById('bodyRight').style.display = 'flex';
+		setTimeout(hideIframe, 30000); // Hide after 30 seconds
+	}
+function hideIframe() 
+	{
+		document.getElementById('bodyRight').style.display = 'none';
+		setTimeout(showRandomContent, 45000); // Show random content after 45 seconds
+	}
+
+
 var myIframe = document.getElementById("bodyRight");
 function displayRandomFile() 
 	{
@@ -61,11 +72,4 @@ function displayRandomFile()
 		myIframe.src = randomSelectedUrl;
 	}
 displayRandomFile();
-setInterval(displayRandomFile, 60000);
-//*--------2 minutes 120 seconds---*//
 //--END select random--------------*//
-
-setTimeout(function() {
-	document.getElementById('bodyRight').style.display = 'block';
-}, 60000);
-}, 60000);
