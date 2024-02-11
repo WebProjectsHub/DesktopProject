@@ -3,8 +3,6 @@ var url = [
 	"./body/A Prayer.html",
 	"./body/Advice To A Son.html",
 	"./body/Be The Best Of Whatever You Are.html",
-	"./body/bodyRight - image.html",	//------*//
-	"./body/bodyRight.html",		//------*//
 	"./body/Courage.html",
 	"./body/Deep-sea Soundings.html",
 	"./body/Desiderata.html",
@@ -50,21 +48,11 @@ var url = [
 	"./body/The Visitor.html",
 	"./body/Time Does Not Bring Relief; You All Have Lied.html",
 	"./body/To A Little Girl.html",
+	"./body/bodyRight - image.html",	//------*//
+	"./body/bodyRight - image - 01.html",	
+	"./body/bodyRight - image - 02.html",	
+	"./body/bodyRight.html",		//------*//
 	];
-
- // Function to display the iframe for 30 seconds
-  function showIframe() 
-	{
-		document.getElementById('bodyRight').style.display = 'block';
-		setTimeout(hideIframe, 30000); // Hide after 30 seconds
-	}
-function hideIframe() 
-	{
-		document.getElementById('bodyRight').style.display = 'none';
-		setTimeout(displayRandomFile, 45000); // Show random content after 45 seconds
-	}
-
-
 var myIframe = document.getElementById("bodyRight");
 function displayRandomFile() 
 	{
@@ -72,4 +60,6 @@ function displayRandomFile()
 		myIframe.src = randomSelectedUrl;
 	}
 displayRandomFile();
+setInterval(displayRandomFile, 100000);
+//*--------2 minutes 120 seconds---*//
 //--END select random--------------*//
