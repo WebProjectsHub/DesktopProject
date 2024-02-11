@@ -55,7 +55,7 @@ var url = [
  // Function to display the iframe for 30 seconds
   function showIframe() 
 	{
-		document.getElementById('bodyRight').style.display = 'flex';
+		document.getElementById('bodyRight').style.display = 'block';
 		setTimeout(hideIframe, 30000); // Hide after 30 seconds
 	}
 function hideIframe() 
