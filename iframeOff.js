@@ -3,7 +3,7 @@
 
         setTimeout(function() {
             document.getElementById('bodyRight').style.display = 'block';
-        }, 120000);
-        }, 60000);
+        }, 30000);
+        }, 45000);
 //*--------60+60 seconds--------*//
 
