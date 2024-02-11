@@ -58,6 +58,6 @@ function displayRandomFile()
 		myIframe.src = randomSelectedUrl;
 	}
 displayRandomFile();
-setInterval(displayRandomFile, 60000);
+setInterval(displayRandomFile, 120000);
 //*--------2 minutes 120 seconds---*//
 //--END select random--------------*//
