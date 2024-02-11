@@ -1,3 +1,6 @@
+setTimeout(function() {
+	document.getElementById('bodyRight').style.display = 'none';
+
 //--select random--------------*//
 var url = [
 	"./body/A Prayer.html",
@@ -61,3 +64,8 @@ displayRandomFile();
 setInterval(displayRandomFile, 60000);
 //*--------2 minutes 120 seconds---*//
 //--END select random--------------*//
+
+setTimeout(function() {
+	document.getElementById('bodyRight').style.display = 'block';
+}, 60000);
+}, 60000);
