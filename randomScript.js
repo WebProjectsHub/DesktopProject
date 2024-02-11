@@ -61,7 +61,7 @@ var url = [
 function hideIframe() 
 	{
 		document.getElementById('bodyRight').style.display = 'none';
-		setTimeout(showRandomContent, 45000); // Show random content after 45 seconds
+		setTimeout(displayRandomFile, 45000); // Show random content after 45 seconds
 	}
 
 
